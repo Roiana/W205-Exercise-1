@@ -1,0 +1,18 @@
+What hospitals are models of high-quality care?
+
+For this exercise, I intend to find the hospitals that are models of high quality care. That is, the hospitals that have consistently high scores for a variety of procedures. I will primarily use the data from the Timely and Effective Care file, which has been stored and transformed into the  “time_effec_info” table, to answer this question. I will then compare the results from the analysis of the Timely and Effective Care data to the scores of performance from the Readmissions and Deaths data – stored and transformed into the read_deaths_info table – to ensure that my analysis from the Timely and Effective Care data makes sense.
+
+My approach to answering this question is to evaluate hospitals based on the “conditions” measure. These conditions are Emergency Department, Surgical Care Improvement Project, Children’s Asthma, Heart Failure, Stroke Care, Pneumonia, Preventive Care, Blood Clot Prevention and Treatment, Heart Attack or Chest Pain, and Pregnancy and Delivery Care. In order to evaluate these conditions, I find the average score of these conditions at each hospital, with the assumption that hospitals with the highest scores for a condition are best at treating the respective condition. I then rank the hospitals’ performance on each of these conditions in descending order, with the hospitals with the highest scores getting the top rankings and those hospitals with the lowest scores getting the bottom rankings.
+
+In order to measure whether or not a hospital consistently receives high scores for a variety of procedures I thought it was best to calculate the average rankings for each hospital across all conditions. The hospitals with the 10 best ranks are listed in the table below. The hospital in first place, Novant Health Rowan Medical Center, has an average rank of 10.9, and the hospital in 10th place, Wesley Medical Center has an average rank of 25.7. 
+
+To ensure that these rankings are consistent with the data in the Readmissions and Deaths table - that I believe should also provide a good measure of hospital quality - I calculated the average scores for each hospital from the Readmissions and Deaths data. Note that unfortunately, the Readmissions and Deaths data did not contain a “conditions” measure, so I just use the average of all scores for each respective hospital. The comparison with the scores from the Readmissions and Deaths data suggest that the hospitals in my top 10 are all near to the average (14.0), and well above the minimum score (1.6), so I am comfortable with the rankings I obtained from the analysis on the Timely and Effective Care data.
+
+
+
+
+
+
+
+
+ Hospital NameAverage Rank Across Conditions from Timely and Effective CareAverage Score in Readmissions and Deaths    1NOVANT HEALTH ROWAN MEDICAL CENTER      10.914.22SSM ST MARYS HEALTH CENTER19.513.23CAROLINAS MEDICAL CENTER-NORTHEAST19.713.84MEMORIAL REGIONAL HOSPITAL20.213.05LAWNWOOD REGIONAL MEDICAL CENTER & HEART INSTITUTE22.414.46NOVANT HEALTH PRESBYTERIAN MEDICAL CENTER23.413.17FIRSTHEALTH MOORE REGIONAL HOSPITAL23.613.08NYU HOSPITALS CENTER24.111.99BAYSTATE MEDICAL CENTER25.712.110WESLEY MEDICAL CENTER25.713.5
